@@ -9,4 +9,5 @@
 
 package hw1.task1;
 public class Rectangle {
+
 }
