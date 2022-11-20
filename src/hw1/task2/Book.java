@@ -42,7 +42,9 @@ public class Book {
     }
 
     void show() {
+        System.out.println("------------------------------");
         System.out.println(author.getAuthor() + "\n" + title.getTitle() + "\n" + content.getContent());
+        System.out.println("------------------------------");
     }
 
     public static void main(String[] args) {
@@ -54,5 +56,6 @@ public class Book {
                 "\nO.W.L. exams, and an obstructive Ministry of Magic.");
         Book book = new Book(author1, title1, content1);
         book.show();
+
     }
 }

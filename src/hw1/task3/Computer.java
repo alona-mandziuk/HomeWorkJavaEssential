@@ -22,10 +22,12 @@ public class Computer {
         computers [2] = new Computer("MacBook");
         computers [3] = new Computer("Asus");
         computers [4] = new Computer("Sony");
+        System.out.println("------------------------------");
         for (int i = 0; i < computers.length; i++) {
             System.out.println(computers[i].getComputer() + " ");
 
         }
+        System.out.println("------------------------------");
 
 
     }
