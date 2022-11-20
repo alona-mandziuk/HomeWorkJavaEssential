@@ -14,7 +14,7 @@ public class Adress {
     String house;
     String apartment;
 
-    public Adress(int index, String country, String city, String street, String house, String apartment) {
+     Adress(int index, String country, String city, String street, String house, String apartment) {
         this.index = index;
         this.country = country;
         this.city = city;
