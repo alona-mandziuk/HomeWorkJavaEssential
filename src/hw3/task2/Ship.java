@@ -2,7 +2,7 @@ package hw3.task2;
 /*
 Для класу Ship – кількість пасажирів та порт приписки.
  */
-public class Ship extends Vehicle {
+class Ship extends Vehicle {
     int passengers = 0;
     int port = 0;
 

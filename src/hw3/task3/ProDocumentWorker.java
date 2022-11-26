@@ -7,7 +7,7 @@
 
 package hw3.task3;
 
-public class ProDocumentWorker extends DocumentWorker {
+class ProDocumentWorker extends DocumentWorker {
 
     @Override
     void editDocument() {

@@ -2,7 +2,7 @@ package hw3.task2;
 /*Написати програму,
 яка виводить на екран інформацію про кожен засіб пересування.*/
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         Car car = new Car(56554, 20000, 200, 1993);
         Plane plane = new Plane(454521, 90000000, 500, 2011, 20, 1235);

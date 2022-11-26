@@ -8,7 +8,7 @@
 
 package hw3.task3;
 
-public class DocumentWorker {
+ class DocumentWorker {
     void openDocument() {
         System.out.println("Document is open.");
     }

@@ -1,6 +1,5 @@
 package hw3.task2;
-
-public class Plane extends Vehicle {
+class Plane extends Vehicle {
     /*
     Для класу Plane має бути визначена висота та кількість пасажирів.
     */

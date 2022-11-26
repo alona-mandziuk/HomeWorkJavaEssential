@@ -3,8 +3,7 @@
 документ збережений в новому форматі.*/
 
 package hw3.task3;
-
-public class ExpertDocumentWorker extends ProDocumentWorker {
+ class ExpertDocumentWorker extends ProDocumentWorker {
     @Override
     void saveDocument() {
         System.out.println("The document is saved in the new format.");
