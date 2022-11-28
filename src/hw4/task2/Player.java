@@ -28,8 +28,8 @@ class Player implements Playable, Recordable {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("------------------------------");
-            System.out.println("Choose the action: ");
-            System.out.println("1 (play) / 2 (record) / 3 (pause) / 4 (stop) / 5 (exit)" );
+        System.out.println("Choose the action: ");
+        System.out.println("1 (play) / 2 (record) / 3 (pause) / 4 (stop) / 5 (exit)");
 
         do {
             int action = scanner.nextInt();
@@ -46,7 +46,6 @@ class Player implements Playable, Recordable {
                 case 4:
                     player.stop();
                     break;
-
             }
         } while (scanner.hasNextInt(5));
         System.out.println("...Finish...");
