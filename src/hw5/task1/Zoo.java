@@ -14,7 +14,7 @@ class Zoo {
         zoo.add(6, "Strauss");
         zoo.add(7, "Tiger");
         System.out.println("--------------------");
-        System.out.println(zoo.toString());
+        System.out.println(zoo);
         System.out.println("--------------------");
         for (String zo: zoo) {
             System.out.println(zo + " ");
