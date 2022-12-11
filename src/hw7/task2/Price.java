@@ -48,7 +48,7 @@ class Main {
         String shop2 = scanner2.nextLine();
         System.out.println("Input the name of the product is selling in this shop: ");
         String productName2 = scanner2.nextLine();
-        System.out.println("Input te price in UAH (in format 00.00): ");
+        System.out.println("Input te price in UAH (in format 00,00): ");
         float price2 = scanner2.nextFloat();
         Price priceTwo = new Price(shop2, productName2, price2);
         prices.add(priceTwo);
