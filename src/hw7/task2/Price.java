@@ -64,19 +64,27 @@ class Main {
             System.out.println(p + " ");
         }
         System.out.println("********************************************************");
-        System.out.println("Input the name of the shop to look the assortment ");
-        Scanner scannerProd = new Scanner(System.in);
-        String requredProduct = scannerProd.nextLine();
 
-        try {
-            if (requredProduct.equalsIgnoreCase(priceOne.shop)) {
-                System.out.println(priceOne.productName);
-            } else if (requredProduct.equalsIgnoreCase(priceTwo.shop)) {
-                System.out.println(priceTwo.productName);
-            } else throw new WrongShopException();
-        } catch (WrongShopException e) {
-            e.wrongShopException();
-        }
+        do {
+            System.out.println("Input the name of the shop to look the assortment ");
+            Scanner scannerProd = new Scanner(System.in);
+            String requredProduct = scannerProd.nextLine();
+
+            try {
+                if (requredProduct.equalsIgnoreCase(priceOne.shop)) {
+                    System.out.println(priceOne.productName);
+                } else if (requredProduct.equalsIgnoreCase(priceTwo.shop)) {
+                    System.out.println(priceTwo.productName);
+                } else throw new WrongShopException();
+            } catch (WrongShopException e) {
+                e.wrongShopException();
+            }
+            if ((requredProduct.equalsIgnoreCase(priceOne.shop))
+                    || (requredProduct.equalsIgnoreCase(priceTwo.shop))) {
+                break;
+            }
+        } while (true);
+
         System.out.println("********************************************************");
     }
 }
