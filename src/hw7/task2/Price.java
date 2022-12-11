@@ -19,7 +19,7 @@ class Price {
     @Override
     public String toString() {
         return "Shop: ' " + shop + '\'' + ", name of the product: '" + productName + '\'' +
-                ", price: " + priceInUAH + '.';
+                ", price: " + priceInUAH + " UAH.";
     }
 }
 
