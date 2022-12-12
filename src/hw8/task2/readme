@@ -1,0 +1,3 @@
+Дивитися попереднє завдання.
+ В обох класах перевизначити метод toString, щоб висновок був наступним:
+ Device: manufacturer = Samsung, price = 120, serialNumber=AB1234567CD, X=1280,Y=1024.
