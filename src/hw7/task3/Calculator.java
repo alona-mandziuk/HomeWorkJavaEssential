@@ -24,10 +24,13 @@ class Calculator {
 
     double div(double var1, double var2) {
         try {
-            result = var1 / var2;
+            if (var2 == 0) {
+                throw new ArithmeticException();
+            } else {
+                result = var1 / var2;
+            }
         } catch (ArithmeticException e) {
             System.out.println("You may not divide to 0.");
-
         }
         return result;
     }
@@ -45,12 +48,13 @@ class CalculatorMain {
         Calculator calculator = new Calculator();
         System.out.println("---------------------------------------------------");
         System.out.println("------CONSOLE CALCULATOR------");
-        System.out.println("Input the first variable: ");
-        double var1 = scanner.nextDouble();
-        System.out.println("Input the second variable: ");
-        double var2 = scanner.nextDouble();
         do {
-            System.out.println("Choose the operation: +, -, *, / ");
+            System.out.println("Input the first variable: ");
+            double var1 = scanner.nextDouble();
+            System.out.println("Input the second variable: ");
+            double var2 = scanner.nextDouble();
+
+            System.out.println("Choose the operation: +, -, *, / , E (for exit)");
             String operation = scanner.next();
             try {
                 if (operation.equals("+")) {
@@ -62,15 +66,14 @@ class CalculatorMain {
                 } else if (operation.equals("/")) {
                     System.out.println(calculator.div(var1, var2));
 
+                } else if (operation.equalsIgnoreCase("E")) {
+                    break;
                 } else throw new WrongOperationException();
             } catch (WrongOperationException e) {
                 e.wrongOperationException();
             }
-            if (operation.equals("+") || operation.equals("-") || operation.equals("*")
-                    || operation.equals("/")) {
-                break;
-            }
-        } while (true);
 
+        } while (true);
+        System.out.println("Finish.");
     }
 }
