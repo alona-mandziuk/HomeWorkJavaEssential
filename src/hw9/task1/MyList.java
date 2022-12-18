@@ -13,7 +13,7 @@ class MyList<T> {
         array = newArray;
     }
 
-    public void add(T obj) {
+    void add(T obj) {
         if (point == array.length - 1) {
             resize(array.length * 2);
         }
@@ -21,11 +21,11 @@ class MyList<T> {
 
     }
 
-    public T get(int index) {
+    T get(int index) {
         return (T) array[index];
     }
 
-    public int size() {
+    int size() {
         return point;
     }
 
